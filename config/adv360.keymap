@@ -85,7 +85,7 @@
         &trans &trans &trans &trans &trans &trans &trans                                                     &trans &trans    &trans    &trans    &trans    &trans &trans
         &trans &trans &trans &trans &trans &trans &trans                                                     &trans &kp LBRC &trans    &lbkt_lpar &rbkt_rpar &kp RBRC &trans
         &trans &trans &trans &trans &trans &trans &trans           &trans &trans &trans &trans               &trans &kp MINUS &kp EQUAL &kp UNDER &kp BSLH  &trans &trans
-        &trans &trans &trans &trans &trans &trans                          &trans &trans                            &trans    &kp PIPE  &kp GRAVE &trans    &trans &trans
+        &trans &trans &trans &trans &trans &trans                          &trans &trans                            &kp TILDE &kp PIPE  &kp GRAVE &trans    &trans &trans
         &trans &trans &trans &trans &trans                 &trans &trans   &trans &trans &trans &trans                        &trans    &trans    &trans    &trans &trans
       >;
     };
