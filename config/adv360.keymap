@@ -20,6 +20,20 @@
           flavor = "tap-preferred";
           bindings = <&kp>, <&kp>;
       };
+
+      lbkt_lpar: left_bracket_paren {
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp LBKT>, <&kp LPAR>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
+
+      rbkt_rpar: right_bracket_paren {
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp RBKT>, <&kp RPAR>;
+          mods = <(MOD_LSFT|MOD_RSFT)>;
+      };
     };
 
   keymap {
@@ -69,9 +83,9 @@
       display-name = "Sym";
       bindings = <
         &trans &trans &trans &trans &trans &trans &trans                                                     &trans &trans    &trans    &trans    &trans    &trans &trans
-        &trans &trans &trans &trans &trans &trans &trans                                                     &trans &kp LBRC &kp LBKT  &kp RBKT  &kp RBRC  &trans &trans
+        &trans &trans &trans &trans &trans &trans &trans                                                     &trans &kp LBRC &trans    &lbkt_lpar &rbkt_rpar &kp RBRC &trans
         &trans &trans &trans &trans &trans &trans &trans           &trans &trans &trans &trans               &trans &kp MINUS &kp EQUAL &kp UNDER &kp BSLH  &trans &trans
-        &trans &trans &trans &trans &trans &trans                          &trans &trans                            &kp EXCL  &kp PIPE  &trans    &trans    &trans &trans
+        &trans &trans &trans &trans &trans &trans                          &trans &trans                            &trans    &kp PIPE  &kp GRAVE &trans    &trans &trans
         &trans &trans &trans &trans &trans                 &trans &trans   &trans &trans &trans &trans                        &trans    &trans    &trans    &trans &trans
       >;
     };
